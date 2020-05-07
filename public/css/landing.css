@@ -1,0 +1,89 @@
+/* SETTING BACKGROUND-COLOR TO BLACK */
+body{
+    background-color: black;
+}
+/* Styling the landing-header (Welcome to yelpcamp)
+# 1 in z axis
+# to use z axis;position set to relative
+# horizontally centered
+# vertically centerd
+*/
+#landing-header{
+    z-index: 1;
+    position: relative;    
+    text-align: center; 
+    padding-top: 40vh;
+}
+/* selecting the h1 inside landing-header */
+#landing-header h1{
+    color: white;
+}
+/* selecting slide-show => image transitions */
+.slide-show{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin:0;
+    padding:0;
+
+}
+/* selecting slide-show => image transitions */
+.slide-show li{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite;
+}
+/* setting up the images */
+.slide-show li:nth-child(1){
+    background-image:url(../images/michael-guite-1o41Wy3Z3kc-unsplash.jpg);
+    animation-delay: 0s;
+}
+.slide-show li:nth-child(2){
+    background-image:url(../images/ben-duchac-3fJOXw1RbPo-unsplash.jpg);
+    animation-delay: 10s;
+}
+.slide-show li:nth-child(3){
+    background-image:url(../images/brian-yurasits-cAVUdHxLgIw-unsplash.jpg);
+    animation-delay: 20s;
+}
+.slide-show li:nth-child(4){
+    background-image:url(../images/tommy-lisbin-2DH-qMX6M4E-unsplash.jpg);
+    animation-delay: 30s;
+}
+.slide-show li:nth-child(5){
+    background-image:url(../images/zach-betten-K9olx8OF36A-unsplash.jpg);
+    animation-delay: 40s;
+}
+/* building the animation */
+@keyframes imageAnimation{
+    0%{
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    10%{
+        opacity:1;
+        animation-timing-function: ease-out;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity:0;
+    }
+}
+/* Older browser support .no-cssanimations class added by modernizer */
+.no-cssanimations .slide-show li{
+    opacity: 1;
+}

@@ -1,0 +1,15 @@
+/* STRETCHES SHOW image TO 100% */
+.thumbnail img{
+    width:100%;
+}   
+/* REMOVES PADDING FROM ALL THUMBNAIS */
+/* .thumbnail{
+    padding: 0;
+} */
+.thumbnail .caption-full{
+    padding: 9px;
+}
+/* making delete form inline */
+#delete-form{
+    display:inline;
+}
