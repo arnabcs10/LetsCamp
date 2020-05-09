@@ -25,8 +25,11 @@ const User = require('./models/user');
 
 //===================================
 //CONNECTION TO DATABASE
-mongoose.connect('mongodb://localhost:27017/yelp_camp',{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
+// mongoose.connect('mongodb://localhost:27017/yelp_camp',{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
 
+//Atlas
+mongoose.connect('mongodb+srv://Arnab:%40admin@cluster0-cif3t.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false,useCreateIndex:true});
+// mongodb+srv://Arnab:<password>@cluster0-cif3t.mongodb.net/test?retryWrites=true&w=majority
 mongoose.connection
               .once("open",()=> console.log("Connected"))
               .on("error",error=> console.log(error)); 
