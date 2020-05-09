@@ -1,6 +1,5 @@
 //INCLUDING PACKAGES
 const express    = require("express");         //EXPRESS
-const request    = require("request");         //INCLUDING REQUEST
 const mongoose   = require('mongoose');       //INCLUDING MONGOOSE
 const bodyParser = require("body-parser");    //INCLUDING BODY-PARSER
 const methodOverride = require("method-override"); //INCLUDING method-override
