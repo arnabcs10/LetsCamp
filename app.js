@@ -4,6 +4,7 @@ const mongoose   = require('mongoose');       //INCLUDING MONGOOSE
 const bodyParser = require("body-parser");    //INCLUDING BODY-PARSER
 const methodOverride = require("method-override"); //INCLUDING method-override
 const flash          = require('connect-flash');
+const dotenv = require('dotenv');
 
 const passport              = require('passport');
 const localStrategy         = require('passport-local');
@@ -41,7 +42,7 @@ app.use(bodyParser.urlencoded({extended:true})); //USING body-parser
 app.use(express.static(__dirname+'/public'));    //USING public directory
 app.use(methodOverride('_method'))
 app.use(flash());
-
+dotenv.config();
 //PASSPORT CONFIGURATION
 app.use(require('express-session')({
   secret:"YelpCamp Project",
@@ -69,6 +70,8 @@ app.use("/campgrounds",campgroundRoutes);
 app.use("/campgrounds/:id/comments",commentRoutes);
 
 //PORT 
-app.listen(process.env.PORT,process.env.IP,function(){
-  console.log("YelpCamp Server Started");
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT,process.env.IP,function(){
+  console.log(`YelpCamp Server Started at PORT ${PORT}`);
 });
