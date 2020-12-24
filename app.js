@@ -44,7 +44,7 @@ app.use(flash());
 dotenv.config();
 //PASSPORT CONFIGURATION
 app.use(require('express-session')({
-  secret:"YelpCamp Project",
+  secret:process.env.SECRET,
   resave:false,
   saveUninitialized:false
 }));
