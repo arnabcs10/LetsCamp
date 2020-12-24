@@ -1,6 +1,6 @@
-# YelpCamp
+# LetsCamp
 
-YelpCamp is a campground rating app, where users can post
+LetsCamp is a campground rating app, where users can post
 information, pictures and other features of various campgrounds
 across the world. Users can also view and comment on others'
 campground posts.Used Node.js,Express ,MongoDB as backend and
@@ -35,7 +35,7 @@ git clone https://github.com/arnabcs10/Movie-Browser.git
 ### Executing program
 Follow the instructions to get started with the project on your local machine 🚀
 
-* In your terminal run `cd yelp-camp/`
+* In your terminal run `cd lets-camp/`
 * Run `npm install` to install all required dependencies
 * Install MongoDB Community Edition and run it by executing `mongod`
 * Run `npm start` to run the project
