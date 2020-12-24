@@ -9,13 +9,13 @@ Bootstrap at frontend.
 ## Description
 Features of the Web App:
 
--Users can create, edit and delete posts and comments.
--Users can add links to campground photos.
--User login with username and password implemented using passport.js
--One cannot manage posts and view user profile without being authenticated.
--One cannot edit or  delete posts and comments created by other users.
--Responsive web design.Flash messages responding to users' interaction with the app.
--Deployed in a heroku server.
+- Users can create, edit and delete posts and comments.
+- Users can add links to campground photos.
+- User login with username and password implemented using passport.js
+- One cannot manage posts and view user profile without being authenticated.
+- One cannot edit or  delete posts and comments created by other users.
+- Responsive web design.Flash messages responding to users' interaction with the app.
+- Deployed in a heroku server.
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ Features of the Web App:
 * Fork and clone this repository in your system
 * Go to the required directory and run 
 ```
-git clone https://github.com/arnabcs10/Movie-Browser.git
+git clone https://github.com/arnabcs10/LetsCamp.git
 ```
 
 ### Executing program
